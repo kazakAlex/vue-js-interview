@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <ContentBlock/>
+      <ContentPage/>
     </v-main>
 
     <v-footer app v-bind="localAttrs">
@@ -11,14 +11,14 @@
 </template>
 
 <script>
-import ContentBlock from './components/ContentBlock';
 import Footer from './components/Footer';
+import ContentPage from "@/pages/ContentPage.vue";
 
 export default {
   name: 'App',
 
   components: {
-    ContentBlock,
+    ContentPage,
     Footer
   },
 
